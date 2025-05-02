@@ -9,7 +9,7 @@
 
 # useful: http://tldp.org/LDP/abs/html/sample-bashrc.html
 
-# Contact: Fernando Pérez <fdo.perez@gmail.com>
+# Contact: Minghua Tan <minghua7an@gmail.com>
 
 ############################################################################
 # Source global definitions
@@ -38,7 +38,7 @@ fi
 # My usual login name on most machines.  This file is set to display any login
 # that is NOT this one in red (root, when I log into machines with an atypical
 # login, etc.).
-export MYLOGIN="fperez"
+export MYLOGIN="minghua7an"
 
 ############################################################################
 # Load basic bash utilities (handy functions and constants)
@@ -236,8 +236,8 @@ alias t='time'
 alias f='find . | grep '
 
 # Git-based management of dot files and basic $HOME setup
-# See https://github.com/fperez/dotfiles 
-# and https://github.com/fperez/homesetup
+# See https://github.com/minghua7an/dotfiles 
+# and https://github.com/minghua7an/homesetup
 # for details
 alias gdot='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias ghome='git --git-dir=$HOME/.homesetup --work-tree=$HOME'
@@ -354,8 +354,8 @@ if [ -z "$MAMBA_ROOT_PREFIX" ]; then
     #echo "*** mamba init in bashrc, not done previously ***"  # dbg
     # >>> mamba initialize >>>
     # !! Contents within this block are managed by 'mamba shell init' !!
-    export MAMBA_EXE='/Users/fperez/local/conda/bin/mamba';
-    export MAMBA_ROOT_PREFIX='/Users/fperez/local/conda';
+    export MAMBA_EXE='/Users/minghua7an/local/conda/bin/mamba';
+    export MAMBA_ROOT_PREFIX='/Users/minghua7an/local/conda';
     __mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
     if [ $? -eq 0 ]; then
         eval "$__mamba_setup"
@@ -369,7 +369,7 @@ fi
 mamba activate base
 
 # DEACTIVATED - copip setup.
-# # My own conda-pip overlay - code here: https://github.com/fperez/copip
+# # My own conda-pip overlay - code here: https://github.com/minghua7an/copip
 # if [ "$CONDA_DEFAULT_ENV" == "base" ] && [ -d "$CONDA_PREFIX/copip" ] && [ -f "$HOME/dev/copip/copipon.sh" ]
 # then
 #     #echo "*** DBG: default copip"  # dbg
