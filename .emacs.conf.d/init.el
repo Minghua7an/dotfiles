@@ -1,5 +1,5 @@
 ;; -*- Mode: Emacs-Lisp -*-
-;; Emacs configuration file. Fernando  Pérez.  This file will NOT work with
+;; Emacs configuration file. Minghua Tan.  This file will NOT work with
 ;; Xemacs, it has GNU Emacs-specific stuff in it.
 
 ;; Note: character code for declaring the input type of interactive arg:

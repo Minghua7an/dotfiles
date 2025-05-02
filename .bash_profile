@@ -25,8 +25,8 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 #############################################################################
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba shell init' !!
-export MAMBA_EXE='/Users/fperez/local/conda/bin/mamba';
-export MAMBA_ROOT_PREFIX='/Users/fperez/local/conda';
+export MAMBA_EXE='/Users/minghua7an/local/conda/bin/mamba';
+export MAMBA_ROOT_PREFIX='/Users/minghua7an/local/conda';
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
@@ -45,3 +45,19 @@ unset __mamba_setup
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/minghua7an/local/conda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/minghua7an/local/conda/etc/profile.d/conda.sh" ]; then
+        . "/Users/minghua7an/local/conda/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/minghua7an/local/conda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

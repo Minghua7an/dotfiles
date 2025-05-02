@@ -1,8 +1,8 @@
 ;;;; ************************************************************************
 ;; STARTUP SECTION
 
-(setq user-full-name "Fernando Perez")
-(setq user-mail-address "Fernando.Perez@berkeley.edu")
+(setq user-full-name "Minghua Tan")
+(setq user-mail-address "minghua7an@gmail.com")
 
 ;; find out how to call expand-file-name so that I can instead write
 ;; ~/.emacs.conf.d rather than /home/fperez/.emacs.conf.d...
